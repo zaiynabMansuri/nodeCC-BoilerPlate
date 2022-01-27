@@ -28,70 +28,70 @@ const deleteUser = async (filter) =>{
     let user = await User.find(filter, { _id:1 });
     if (user.length){
       user = user.map((obj) => obj._id);
-      const userFilter8577 = { 'addedBy': { '$in': user } };
-      const user6466 = await deleteUser(userFilter8577);
-      const userFilter6028 = { 'updatedBy': { '$in': user } };
-      const user8928 = await deleteUser(userFilter6028);
-      const productFilter8876 = { 'sellerId': { '$in': user } };
-      const product8454 = await deleteProduct(productFilter8876);
-      const productFilter6961 = { 'addedBy': { '$in': user } };
-      const product8123 = await deleteProduct(productFilter6961);
-      const productFilter3456 = { 'updatedBy': { '$in': user } };
-      const product0225 = await deleteProduct(productFilter3456);
-      const categoryFilter5723 = { 'addedBy': { '$in': user } };
-      const category5776 = await deleteCategory(categoryFilter5723);
-      const categoryFilter9529 = { 'updatedBy': { '$in': user } };
-      const category1879 = await deleteCategory(categoryFilter9529);
-      const orderFilter3575 = { 'addedBy': { '$in': user } };
-      const order8966 = await deleteOrder(orderFilter3575);
-      const orderFilter3029 = { 'updatedBy': { '$in': user } };
-      const order1429 = await deleteOrder(orderFilter3029);
-      const bannerFilter6517 = { 'addedBy': { '$in': user } };
-      const banner1537 = await deleteBanner(bannerFilter6517);
-      const bannerFilter3729 = { 'updatedBy': { '$in': user } };
-      const banner7534 = await deleteBanner(bannerFilter3729);
-      const bannerFilter5552 = { 'sellerId': { '$in': user } };
-      const banner6730 = await deleteBanner(bannerFilter5552);
-      const cartFilter5156 = { 'addedBy': { '$in': user } };
-      const cart7811 = await deleteCart(cartFilter5156);
-      const cartFilter1553 = { 'updatedBy': { '$in': user } };
-      const cart4388 = await deleteCart(cartFilter1553);
-      const countryFilter7510 = { 'addedBy': { '$in': user } };
-      const country6241 = await deleteCountry(countryFilter7510);
-      const countryFilter0764 = { 'updatedBy': { '$in': user } };
-      const country0479 = await deleteCountry(countryFilter0764);
-      const cityFilter9281 = { 'addedBy': { '$in': user } };
-      const city1049 = await deleteCity(cityFilter9281);
-      const cityFilter3843 = { 'updatedBy': { '$in': user } };
-      const city3224 = await deleteCity(cityFilter3843);
-      const pincodeFilter3253 = { 'addedBy': { '$in': user } };
-      const pincode5093 = await deletePincode(pincodeFilter3253);
-      const pincodeFilter1872 = { 'updatedBy': { '$in': user } };
-      const pincode9857 = await deletePincode(pincodeFilter1872);
-      const stateFilter8814 = { 'addedBy': { '$in': user } };
-      const state4121 = await deleteState(stateFilter8814);
-      const stateFilter5563 = { 'updatedBy': { '$in': user } };
-      const state1457 = await deleteState(stateFilter5563);
-      const walletFilter0581 = { 'userId': { '$in': user } };
-      const wallet8646 = await deleteWallet(walletFilter0581);
-      const walletFilter3075 = { 'addedBy': { '$in': user } };
-      const wallet2985 = await deleteWallet(walletFilter3075);
-      const walletFilter6244 = { 'updatedBy': { '$in': user } };
-      const wallet2470 = await deleteWallet(walletFilter6244);
-      const walletTransactionFilter4640 = { 'userId': { '$in': user } };
-      const walletTransaction8673 = await deleteWalletTransaction(walletTransactionFilter4640);
-      const walletTransactionFilter5459 = { 'addedBy': { '$in': user } };
-      const walletTransaction1983 = await deleteWalletTransaction(walletTransactionFilter5459);
-      const walletTransactionFilter4477 = { 'updatedBy': { '$in': user } };
-      const walletTransaction8565 = await deleteWalletTransaction(walletTransactionFilter4477);
-      const shippingFilter7651 = { 'addedBy': { '$in': user } };
-      const shipping8607 = await deleteShipping(shippingFilter7651);
-      const shippingFilter8739 = { 'updatedBy': { '$in': user } };
-      const shipping4431 = await deleteShipping(shippingFilter8739);
-      const userTokensFilter6027 = { 'userId': { '$in': user } };
-      const userTokens8644 = await deleteUserTokens(userTokensFilter6027);
-      const userRoleFilter3065 = { 'userId': { '$in': user } };
-      const userRole8788 = await deleteUserRole(userRoleFilter3065);
+      const userFilter3294 = { 'addedBy': { '$in': user } };
+      const user9683 = await deleteUser(userFilter3294);
+      const userFilter5593 = { 'updatedBy': { '$in': user } };
+      const user1105 = await deleteUser(userFilter5593);
+      const productFilter3758 = { 'sellerId': { '$in': user } };
+      const product7707 = await deleteProduct(productFilter3758);
+      const productFilter6133 = { 'addedBy': { '$in': user } };
+      const product9835 = await deleteProduct(productFilter6133);
+      const productFilter7625 = { 'updatedBy': { '$in': user } };
+      const product0757 = await deleteProduct(productFilter7625);
+      const categoryFilter3434 = { 'addedBy': { '$in': user } };
+      const category3540 = await deleteCategory(categoryFilter3434);
+      const categoryFilter7143 = { 'updatedBy': { '$in': user } };
+      const category1377 = await deleteCategory(categoryFilter7143);
+      const orderFilter8647 = { 'addedBy': { '$in': user } };
+      const order4103 = await deleteOrder(orderFilter8647);
+      const orderFilter6146 = { 'updatedBy': { '$in': user } };
+      const order4992 = await deleteOrder(orderFilter6146);
+      const bannerFilter9183 = { 'addedBy': { '$in': user } };
+      const banner8078 = await deleteBanner(bannerFilter9183);
+      const bannerFilter9527 = { 'updatedBy': { '$in': user } };
+      const banner8491 = await deleteBanner(bannerFilter9527);
+      const bannerFilter7441 = { 'sellerId': { '$in': user } };
+      const banner8580 = await deleteBanner(bannerFilter7441);
+      const cartFilter6751 = { 'addedBy': { '$in': user } };
+      const cart5381 = await deleteCart(cartFilter6751);
+      const cartFilter2564 = { 'updatedBy': { '$in': user } };
+      const cart2135 = await deleteCart(cartFilter2564);
+      const countryFilter4006 = { 'addedBy': { '$in': user } };
+      const country6843 = await deleteCountry(countryFilter4006);
+      const countryFilter2543 = { 'updatedBy': { '$in': user } };
+      const country9766 = await deleteCountry(countryFilter2543);
+      const cityFilter7642 = { 'addedBy': { '$in': user } };
+      const city3767 = await deleteCity(cityFilter7642);
+      const cityFilter2527 = { 'updatedBy': { '$in': user } };
+      const city7262 = await deleteCity(cityFilter2527);
+      const pincodeFilter7555 = { 'addedBy': { '$in': user } };
+      const pincode8044 = await deletePincode(pincodeFilter7555);
+      const pincodeFilter2166 = { 'updatedBy': { '$in': user } };
+      const pincode7773 = await deletePincode(pincodeFilter2166);
+      const stateFilter7012 = { 'addedBy': { '$in': user } };
+      const state4535 = await deleteState(stateFilter7012);
+      const stateFilter9736 = { 'updatedBy': { '$in': user } };
+      const state8239 = await deleteState(stateFilter9736);
+      const walletFilter8296 = { 'userId': { '$in': user } };
+      const wallet2285 = await deleteWallet(walletFilter8296);
+      const walletFilter0515 = { 'addedBy': { '$in': user } };
+      const wallet5470 = await deleteWallet(walletFilter0515);
+      const walletFilter3356 = { 'updatedBy': { '$in': user } };
+      const wallet4687 = await deleteWallet(walletFilter3356);
+      const walletTransactionFilter4476 = { 'userId': { '$in': user } };
+      const walletTransaction0042 = await deleteWalletTransaction(walletTransactionFilter4476);
+      const walletTransactionFilter8165 = { 'addedBy': { '$in': user } };
+      const walletTransaction5628 = await deleteWalletTransaction(walletTransactionFilter8165);
+      const walletTransactionFilter2290 = { 'updatedBy': { '$in': user } };
+      const walletTransaction6866 = await deleteWalletTransaction(walletTransactionFilter2290);
+      const shippingFilter5602 = { 'addedBy': { '$in': user } };
+      const shipping9538 = await deleteShipping(shippingFilter5602);
+      const shippingFilter4314 = { 'updatedBy': { '$in': user } };
+      const shipping9655 = await deleteShipping(shippingFilter4314);
+      const userTokensFilter8327 = { 'userId': { '$in': user } };
+      const userTokens3834 = await deleteUserTokens(userTokensFilter8327);
+      const userRoleFilter8258 = { 'userId': { '$in': user } };
+      const userRole7566 = await deleteUserRole(userRoleFilter8258);
       return await User.deleteMany(filter);
     } else {
       return 'No user found.';
@@ -114,12 +114,12 @@ const deleteCategory = async (filter) =>{
     let category = await Category.find(filter, { _id:1 });
     if (category.length){
       category = category.map((obj) => obj._id);
-      const productFilter0197 = { 'category': { '$in': category } };
-      const product7613 = await deleteProduct(productFilter0197);
-      const productFilter8895 = { 'subCategory': { '$in': category } };
-      const product1285 = await deleteProduct(productFilter8895);
-      const categoryFilter6967 = { 'parentCategoryId': { '$in': category } };
-      const category6999 = await deleteCategory(categoryFilter6967);
+      const productFilter7687 = { 'category': { '$in': category } };
+      const product3498 = await deleteProduct(productFilter7687);
+      const productFilter7386 = { 'subCategory': { '$in': category } };
+      const product0285 = await deleteProduct(productFilter7386);
+      const categoryFilter5736 = { 'parentCategoryId': { '$in': category } };
+      const category3905 = await deleteCategory(categoryFilter5736);
       return await Category.deleteMany(filter);
     } else {
       return 'No category found.';
@@ -158,10 +158,10 @@ const deleteCountry = async (filter) =>{
     let country = await Country.find(filter, { _id:1 });
     if (country.length){
       country = country.map((obj) => obj._id);
-      const pincodeFilter1181 = { 'countryId': { '$in': country } };
-      const pincode0176 = await deletePincode(pincodeFilter1181);
-      const stateFilter3033 = { 'countryId': { '$in': country } };
-      const state2554 = await deleteState(stateFilter3033);
+      const pincodeFilter7625 = { 'countryId': { '$in': country } };
+      const pincode2622 = await deletePincode(pincodeFilter7625);
+      const stateFilter6090 = { 'countryId': { '$in': country } };
+      const state5788 = await deleteState(stateFilter6090);
       return await Country.deleteMany(filter);
     } else {
       return 'No country found.';
@@ -176,8 +176,8 @@ const deleteCity = async (filter) =>{
     let city = await City.find(filter, { _id:1 });
     if (city.length){
       city = city.map((obj) => obj._id);
-      const pincodeFilter5587 = { 'cityId': { '$in': city } };
-      const pincode9039 = await deletePincode(pincodeFilter5587);
+      const pincodeFilter2173 = { 'cityId': { '$in': city } };
+      const pincode2609 = await deletePincode(pincodeFilter2173);
       return await City.deleteMany(filter);
     } else {
       return 'No city found.';
@@ -200,10 +200,10 @@ const deleteState = async (filter) =>{
     let state = await State.find(filter, { _id:1 });
     if (state.length){
       state = state.map((obj) => obj._id);
-      const cityFilter7280 = { 'stateId': { '$in': state } };
-      const city9279 = await deleteCity(cityFilter7280);
-      const pincodeFilter4779 = { 'stateId': { '$in': state } };
-      const pincode2053 = await deletePincode(pincodeFilter4779);
+      const cityFilter5470 = { 'stateId': { '$in': state } };
+      const city7698 = await deleteCity(cityFilter5470);
+      const pincodeFilter7397 = { 'stateId': { '$in': state } };
+      const pincode2713 = await deletePincode(pincodeFilter7397);
       return await State.deleteMany(filter);
     } else {
       return 'No state found.';
@@ -218,8 +218,8 @@ const deleteWallet = async (filter) =>{
     let wallet = await Wallet.find(filter, { _id:1 });
     if (wallet.length){
       wallet = wallet.map((obj) => obj._id);
-      const walletTransactionFilter8323 = { 'walletId': { '$in': wallet } };
-      const walletTransaction6742 = await deleteWalletTransaction(walletTransactionFilter8323);
+      const walletTransactionFilter5811 = { 'walletId': { '$in': wallet } };
+      const walletTransaction2588 = await deleteWalletTransaction(walletTransactionFilter5811);
       return await Wallet.deleteMany(filter);
     } else {
       return 'No wallet found.';
@@ -258,10 +258,10 @@ const deleteRole = async (filter) =>{
     let role = await Role.find(filter, { _id:1 });
     if (role.length){
       role = role.map((obj) => obj._id);
-      const routeRoleFilter8959 = { 'roleId': { '$in': role } };
-      const routeRole8651 = await deleteRouteRole(routeRoleFilter8959);
-      const userRoleFilter8105 = { 'roleId': { '$in': role } };
-      const userRole1964 = await deleteUserRole(userRoleFilter8105);
+      const routeRoleFilter8236 = { 'roleId': { '$in': role } };
+      const routeRole3245 = await deleteRouteRole(routeRoleFilter8236);
+      const userRoleFilter2343 = { 'roleId': { '$in': role } };
+      const userRole2216 = await deleteUserRole(userRoleFilter2343);
       return await Role.deleteMany(filter);
     } else {
       return 'No role found.';
@@ -276,8 +276,8 @@ const deleteProjectRoute = async (filter) =>{
     let projectroute = await ProjectRoute.find(filter, { _id:1 });
     if (projectroute.length){
       projectroute = projectroute.map((obj) => obj._id);
-      const routeRoleFilter8752 = { 'routeId': { '$in': projectroute } };
-      const routeRole9202 = await deleteRouteRole(routeRoleFilter8752);
+      const routeRoleFilter9333 = { 'routeId': { '$in': projectroute } };
+      const routeRole4765 = await deleteRouteRole(routeRoleFilter9333);
       return await ProjectRoute.deleteMany(filter);
     } else {
       return 'No projectRoute found.';
@@ -650,70 +650,70 @@ const softDeleteUser = async (filter,updateBody, defaultValues = {}) =>{
     let user = await User.find(filter, { _id:1 });
     if (user.length){
       user = user.map((obj) => obj._id);
-      const userFilter9598 = { 'addedBy': { '$in': user } };
-      const user2635 = await softDeleteUser(userFilter9598, updateBody);
-      const userFilter0128 = { 'updatedBy': { '$in': user } };
-      const user8987 = await softDeleteUser(userFilter0128, updateBody);
-      const productFilter2030 = { 'sellerId': { '$in': user } };
-      const product6840 = await softDeleteProduct(productFilter2030, updateBody);
-      const productFilter1985 = { 'addedBy': { '$in': user } };
-      const product1664 = await softDeleteProduct(productFilter1985, updateBody);
-      const productFilter4336 = { 'updatedBy': { '$in': user } };
-      const product1123 = await softDeleteProduct(productFilter4336, updateBody);
-      const categoryFilter3591 = { 'addedBy': { '$in': user } };
-      const category0348 = await softDeleteCategory(categoryFilter3591, updateBody);
-      const categoryFilter9451 = { 'updatedBy': { '$in': user } };
-      const category9915 = await softDeleteCategory(categoryFilter9451, updateBody);
-      const orderFilter5827 = { 'addedBy': { '$in': user } };
-      const order2157 = await softDeleteOrder(orderFilter5827, updateBody);
-      const orderFilter4704 = { 'updatedBy': { '$in': user } };
-      const order1358 = await softDeleteOrder(orderFilter4704, updateBody);
-      const bannerFilter9187 = { 'addedBy': { '$in': user } };
-      const banner9630 = await softDeleteBanner(bannerFilter9187, updateBody);
-      const bannerFilter7691 = { 'updatedBy': { '$in': user } };
-      const banner6478 = await softDeleteBanner(bannerFilter7691, updateBody);
-      const bannerFilter0169 = { 'sellerId': { '$in': user } };
-      const banner6270 = await softDeleteBanner(bannerFilter0169, updateBody);
-      const cartFilter7632 = { 'addedBy': { '$in': user } };
-      const cart0485 = await softDeleteCart(cartFilter7632, updateBody);
-      const cartFilter6666 = { 'updatedBy': { '$in': user } };
-      const cart6650 = await softDeleteCart(cartFilter6666, updateBody);
-      const countryFilter6454 = { 'addedBy': { '$in': user } };
-      const country5692 = await softDeleteCountry(countryFilter6454, updateBody);
-      const countryFilter9346 = { 'updatedBy': { '$in': user } };
-      const country4227 = await softDeleteCountry(countryFilter9346, updateBody);
-      const cityFilter9497 = { 'addedBy': { '$in': user } };
-      const city9527 = await softDeleteCity(cityFilter9497, updateBody);
-      const cityFilter9468 = { 'updatedBy': { '$in': user } };
-      const city9823 = await softDeleteCity(cityFilter9468, updateBody);
-      const pincodeFilter7953 = { 'addedBy': { '$in': user } };
-      const pincode2793 = await softDeletePincode(pincodeFilter7953, updateBody);
-      const pincodeFilter6696 = { 'updatedBy': { '$in': user } };
-      const pincode9458 = await softDeletePincode(pincodeFilter6696, updateBody);
-      const stateFilter2837 = { 'addedBy': { '$in': user } };
-      const state3230 = await softDeleteState(stateFilter2837, updateBody);
-      const stateFilter0054 = { 'updatedBy': { '$in': user } };
-      const state4555 = await softDeleteState(stateFilter0054, updateBody);
-      const walletFilter8261 = { 'userId': { '$in': user } };
-      const wallet7902 = await softDeleteWallet(walletFilter8261, updateBody);
-      const walletFilter7727 = { 'addedBy': { '$in': user } };
-      const wallet3786 = await softDeleteWallet(walletFilter7727, updateBody);
-      const walletFilter7632 = { 'updatedBy': { '$in': user } };
-      const wallet7015 = await softDeleteWallet(walletFilter7632, updateBody);
-      const walletTransactionFilter3190 = { 'userId': { '$in': user } };
-      const walletTransaction7188 = await softDeleteWalletTransaction(walletTransactionFilter3190, updateBody);
-      const walletTransactionFilter3041 = { 'addedBy': { '$in': user } };
-      const walletTransaction6416 = await softDeleteWalletTransaction(walletTransactionFilter3041, updateBody);
-      const walletTransactionFilter7504 = { 'updatedBy': { '$in': user } };
-      const walletTransaction9459 = await softDeleteWalletTransaction(walletTransactionFilter7504, updateBody);
-      const shippingFilter1255 = { 'addedBy': { '$in': user } };
-      const shipping4438 = await softDeleteShipping(shippingFilter1255, updateBody);
-      const shippingFilter4487 = { 'updatedBy': { '$in': user } };
-      const shipping5827 = await softDeleteShipping(shippingFilter4487, updateBody);
-      const userTokensFilter0028 = { 'userId': { '$in': user } };
-      const userTokens3898 = await softDeleteUserTokens(userTokensFilter0028, updateBody);
-      const userRoleFilter3265 = { 'userId': { '$in': user } };
-      const userRole3386 = await softDeleteUserRole(userRoleFilter3265, updateBody);
+      const userFilter0538 = { 'addedBy': { '$in': user } };
+      const user5834 = await softDeleteUser(userFilter0538, updateBody);
+      const userFilter0140 = { 'updatedBy': { '$in': user } };
+      const user8071 = await softDeleteUser(userFilter0140, updateBody);
+      const productFilter7741 = { 'sellerId': { '$in': user } };
+      const product9747 = await softDeleteProduct(productFilter7741, updateBody);
+      const productFilter3399 = { 'addedBy': { '$in': user } };
+      const product5142 = await softDeleteProduct(productFilter3399, updateBody);
+      const productFilter4716 = { 'updatedBy': { '$in': user } };
+      const product9662 = await softDeleteProduct(productFilter4716, updateBody);
+      const categoryFilter8790 = { 'addedBy': { '$in': user } };
+      const category7093 = await softDeleteCategory(categoryFilter8790, updateBody);
+      const categoryFilter1582 = { 'updatedBy': { '$in': user } };
+      const category4587 = await softDeleteCategory(categoryFilter1582, updateBody);
+      const orderFilter6884 = { 'addedBy': { '$in': user } };
+      const order0418 = await softDeleteOrder(orderFilter6884, updateBody);
+      const orderFilter5305 = { 'updatedBy': { '$in': user } };
+      const order7436 = await softDeleteOrder(orderFilter5305, updateBody);
+      const bannerFilter9489 = { 'addedBy': { '$in': user } };
+      const banner0427 = await softDeleteBanner(bannerFilter9489, updateBody);
+      const bannerFilter0449 = { 'updatedBy': { '$in': user } };
+      const banner5378 = await softDeleteBanner(bannerFilter0449, updateBody);
+      const bannerFilter7328 = { 'sellerId': { '$in': user } };
+      const banner0744 = await softDeleteBanner(bannerFilter7328, updateBody);
+      const cartFilter5665 = { 'addedBy': { '$in': user } };
+      const cart1869 = await softDeleteCart(cartFilter5665, updateBody);
+      const cartFilter5099 = { 'updatedBy': { '$in': user } };
+      const cart6685 = await softDeleteCart(cartFilter5099, updateBody);
+      const countryFilter2637 = { 'addedBy': { '$in': user } };
+      const country2105 = await softDeleteCountry(countryFilter2637, updateBody);
+      const countryFilter5723 = { 'updatedBy': { '$in': user } };
+      const country7416 = await softDeleteCountry(countryFilter5723, updateBody);
+      const cityFilter2446 = { 'addedBy': { '$in': user } };
+      const city7435 = await softDeleteCity(cityFilter2446, updateBody);
+      const cityFilter4271 = { 'updatedBy': { '$in': user } };
+      const city2595 = await softDeleteCity(cityFilter4271, updateBody);
+      const pincodeFilter1423 = { 'addedBy': { '$in': user } };
+      const pincode1793 = await softDeletePincode(pincodeFilter1423, updateBody);
+      const pincodeFilter3467 = { 'updatedBy': { '$in': user } };
+      const pincode0439 = await softDeletePincode(pincodeFilter3467, updateBody);
+      const stateFilter2680 = { 'addedBy': { '$in': user } };
+      const state0038 = await softDeleteState(stateFilter2680, updateBody);
+      const stateFilter3850 = { 'updatedBy': { '$in': user } };
+      const state8784 = await softDeleteState(stateFilter3850, updateBody);
+      const walletFilter6539 = { 'userId': { '$in': user } };
+      const wallet8755 = await softDeleteWallet(walletFilter6539, updateBody);
+      const walletFilter5741 = { 'addedBy': { '$in': user } };
+      const wallet9115 = await softDeleteWallet(walletFilter5741, updateBody);
+      const walletFilter6565 = { 'updatedBy': { '$in': user } };
+      const wallet4871 = await softDeleteWallet(walletFilter6565, updateBody);
+      const walletTransactionFilter3712 = { 'userId': { '$in': user } };
+      const walletTransaction7671 = await softDeleteWalletTransaction(walletTransactionFilter3712, updateBody);
+      const walletTransactionFilter5383 = { 'addedBy': { '$in': user } };
+      const walletTransaction1431 = await softDeleteWalletTransaction(walletTransactionFilter5383, updateBody);
+      const walletTransactionFilter8748 = { 'updatedBy': { '$in': user } };
+      const walletTransaction2812 = await softDeleteWalletTransaction(walletTransactionFilter8748, updateBody);
+      const shippingFilter3141 = { 'addedBy': { '$in': user } };
+      const shipping8404 = await softDeleteShipping(shippingFilter3141, updateBody);
+      const shippingFilter8733 = { 'updatedBy': { '$in': user } };
+      const shipping2342 = await softDeleteShipping(shippingFilter8733, updateBody);
+      const userTokensFilter4901 = { 'userId': { '$in': user } };
+      const userTokens8202 = await softDeleteUserTokens(userTokensFilter4901, updateBody);
+      const userRoleFilter9584 = { 'userId': { '$in': user } };
+      const userRole5509 = await softDeleteUserRole(userRoleFilter9584, updateBody);
       return await User.updateMany(filter, {
         ...defaultValues,
         ...updateBody
@@ -742,12 +742,12 @@ const softDeleteCategory = async (filter,updateBody, defaultValues = {}) =>{
     let category = await Category.find(filter, { _id:1 });
     if (category.length){
       category = category.map((obj) => obj._id);
-      const productFilter3337 = { 'category': { '$in': category } };
-      const product4326 = await softDeleteProduct(productFilter3337, updateBody);
-      const productFilter3566 = { 'subCategory': { '$in': category } };
-      const product3781 = await softDeleteProduct(productFilter3566, updateBody);
-      const categoryFilter0872 = { 'parentCategoryId': { '$in': category } };
-      const category0018 = await softDeleteCategory(categoryFilter0872, updateBody);
+      const productFilter4856 = { 'category': { '$in': category } };
+      const product9244 = await softDeleteProduct(productFilter4856, updateBody);
+      const productFilter0326 = { 'subCategory': { '$in': category } };
+      const product0748 = await softDeleteProduct(productFilter0326, updateBody);
+      const categoryFilter5928 = { 'parentCategoryId': { '$in': category } };
+      const category5921 = await softDeleteCategory(categoryFilter5928, updateBody);
       return await Category.updateMany(filter, {
         ...defaultValues,
         ...updateBody
@@ -798,10 +798,10 @@ const softDeleteCountry = async (filter,updateBody, defaultValues = {}) =>{
     let country = await Country.find(filter, { _id:1 });
     if (country.length){
       country = country.map((obj) => obj._id);
-      const pincodeFilter5277 = { 'countryId': { '$in': country } };
-      const pincode6279 = await softDeletePincode(pincodeFilter5277, updateBody);
-      const stateFilter8769 = { 'countryId': { '$in': country } };
-      const state8844 = await softDeleteState(stateFilter8769, updateBody);
+      const pincodeFilter4258 = { 'countryId': { '$in': country } };
+      const pincode7898 = await softDeletePincode(pincodeFilter4258, updateBody);
+      const stateFilter5266 = { 'countryId': { '$in': country } };
+      const state6852 = await softDeleteState(stateFilter5266, updateBody);
       return await Country.updateMany(filter, {
         ...defaultValues,
         ...updateBody
@@ -819,8 +819,8 @@ const softDeleteCity = async (filter,updateBody, defaultValues = {}) =>{
     let city = await City.find(filter, { _id:1 });
     if (city.length){
       city = city.map((obj) => obj._id);
-      const pincodeFilter3985 = { 'cityId': { '$in': city } };
-      const pincode4239 = await softDeletePincode(pincodeFilter3985, updateBody);
+      const pincodeFilter0154 = { 'cityId': { '$in': city } };
+      const pincode4093 = await softDeletePincode(pincodeFilter0154, updateBody);
       return await City.updateMany(filter, {
         ...defaultValues,
         ...updateBody
@@ -849,10 +849,10 @@ const softDeleteState = async (filter,updateBody, defaultValues = {}) =>{
     let state = await State.find(filter, { _id:1 });
     if (state.length){
       state = state.map((obj) => obj._id);
-      const cityFilter9682 = { 'stateId': { '$in': state } };
-      const city0965 = await softDeleteCity(cityFilter9682, updateBody);
-      const pincodeFilter2808 = { 'stateId': { '$in': state } };
-      const pincode3250 = await softDeletePincode(pincodeFilter2808, updateBody);
+      const cityFilter1043 = { 'stateId': { '$in': state } };
+      const city2882 = await softDeleteCity(cityFilter1043, updateBody);
+      const pincodeFilter6051 = { 'stateId': { '$in': state } };
+      const pincode3136 = await softDeletePincode(pincodeFilter6051, updateBody);
       return await State.updateMany(filter, {
         ...defaultValues,
         ...updateBody
@@ -870,8 +870,8 @@ const softDeleteWallet = async (filter,updateBody, defaultValues = {}) =>{
     let wallet = await Wallet.find(filter, { _id:1 });
     if (wallet.length){
       wallet = wallet.map((obj) => obj._id);
-      const walletTransactionFilter3459 = { 'walletId': { '$in': wallet } };
-      const walletTransaction4385 = await softDeleteWalletTransaction(walletTransactionFilter3459, updateBody);
+      const walletTransactionFilter7290 = { 'walletId': { '$in': wallet } };
+      const walletTransaction6678 = await softDeleteWalletTransaction(walletTransactionFilter7290, updateBody);
       return await Wallet.updateMany(filter, {
         ...defaultValues,
         ...updateBody
@@ -922,10 +922,10 @@ const softDeleteRole = async (filter,updateBody, defaultValues = {}) =>{
     let role = await Role.find(filter, { _id:1 });
     if (role.length){
       role = role.map((obj) => obj._id);
-      const routeRoleFilter2063 = { 'roleId': { '$in': role } };
-      const routeRole1824 = await softDeleteRouteRole(routeRoleFilter2063, updateBody);
-      const userRoleFilter9825 = { 'roleId': { '$in': role } };
-      const userRole6811 = await softDeleteUserRole(userRoleFilter9825, updateBody);
+      const routeRoleFilter8154 = { 'roleId': { '$in': role } };
+      const routeRole8438 = await softDeleteRouteRole(routeRoleFilter8154, updateBody);
+      const userRoleFilter0242 = { 'roleId': { '$in': role } };
+      const userRole5685 = await softDeleteUserRole(userRoleFilter0242, updateBody);
       return await Role.updateMany(filter, {
         ...defaultValues,
         ...updateBody
@@ -943,8 +943,8 @@ const softDeleteProjectRoute = async (filter,updateBody, defaultValues = {}) =>{
     let projectroute = await ProjectRoute.find(filter, { _id:1 });
     if (projectroute.length){
       projectroute = projectroute.map((obj) => obj._id);
-      const routeRoleFilter2656 = { 'routeId': { '$in': projectroute } };
-      const routeRole3467 = await softDeleteRouteRole(routeRoleFilter2656, updateBody);
+      const routeRoleFilter9222 = { 'routeId': { '$in': projectroute } };
+      const routeRole2223 = await softDeleteRouteRole(routeRoleFilter9222, updateBody);
       return await ProjectRoute.updateMany(filter, {
         ...defaultValues,
         ...updateBody
