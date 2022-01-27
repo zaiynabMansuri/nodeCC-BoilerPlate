@@ -14,14 +14,14 @@
 
        - One user with User role,
 	   # Default User credentials
-	   **username** : Pat.Howe17
-	   **password** : g3oTa_WvxNcQ5CA
+	   **username** : Art38
+	   **password** : KrKrtoGBnpPAa3t
 
 
        - One user with Admin role,
 	   # Default Admin credentials
-	   **username** : Genesis.Skiles
-	   **password** : CGmcBzB3JW9IyB3
+	   **username** : Dalton.Hessel
+	   **password** : ERA_i3xhOSelCft
 
 
 ## How to use generated APIs:

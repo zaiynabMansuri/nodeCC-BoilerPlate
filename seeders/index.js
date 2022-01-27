@@ -15,27 +15,27 @@ const { replaceAll } = require('../utils/common');
 async function seedUser () {
   try {
     let user = await User.findOne({
-      'username':'Pat.Howe17',
+      'username':'Art38',
       'isActive':true,
       'isDeleted':false
     });
-    if (!user || !user.isPasswordMatch('g3oTa_WvxNcQ5CA') ) {
+    if (!user || !user.isPasswordMatch('KrKrtoGBnpPAa3t') ) {
       let user = new User({
-        'password':'g3oTa_WvxNcQ5CA',
-        'username':'Pat.Howe17',
+        'password':'KrKrtoGBnpPAa3t',
+        'username':'Art38',
         'role':authConstant.USER_ROLE.User
       });
       await User.create(user);
     }
     let admin = await User.findOne({
-      'username':'Genesis.Skiles',
+      'username':'Dalton.Hessel',
       'isActive':true,
       'isDeleted':false
     });
-    if (!admin || !admin.isPasswordMatch('CGmcBzB3JW9IyB3') ) {
+    if (!admin || !admin.isPasswordMatch('ERA_i3xhOSelCft') ) {
       let admin = new User({
-        'password':'CGmcBzB3JW9IyB3',
-        'username':'Genesis.Skiles',
+        'password':'ERA_i3xhOSelCft',
+        'username':'Dalton.Hessel',
         'role':authConstant.USER_ROLE.Admin
       });
       await User.create(admin);
@@ -376,76 +376,6 @@ async function seedRouteRole () {
       },
       {
         route: '/admin/order/deletemany',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/banner/create',
-        role: 'System_User',
-        method: 'POST' 
-      },
-      {
-        route: '/admin/banner/addbulk',
-        role: 'System_User',
-        method: 'POST' 
-      },
-      {
-        route: '/admin/banner/list',
-        role: 'System_User',
-        method: 'POST' 
-      },
-      {
-        route: '/admin/banner/:id',
-        role: 'System_User',
-        method: 'GET' 
-      },
-      {
-        route: '/admin/banner/:id',
-        role: 'System_User',
-        method: 'POST' 
-      },
-      {
-        route: '/admin/banner/count',
-        role: 'System_User',
-        method: 'POST' 
-      },
-      {
-        route: '/admin/banner/aggregate',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/admin/banner/update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/banner/partial-update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/banner/updatebulk',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/banner/softdelete/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/banner/softdeletemany',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/admin/banner/delete/:id',
-        role: 'System_User',
-        method: 'DELETE'
-      },
-      {
-        route: '/admin/banner/deletemany',
         role: 'System_User',
         method: 'POST'
       },
@@ -1640,76 +1570,6 @@ async function seedRouteRole () {
         method: 'POST'
       },
       {
-        route: '/device/api/v1/banner/create',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/banner/addbulk',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/banner/list',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/banner/:id',
-        role: 'System_User',
-        method: 'GET'
-      },
-      {
-        route: '/device/api/v1/banner/:id',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/banner/count',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/banner/aggregate',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/device/api/v1/banner/update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/banner/partial-update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/banner/updatebulk',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/banner/softdelete/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/banner/softdeletemany',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/device/api/v1/banner/delete/:id',
-        role: 'System_User',
-        method: 'DELETE'
-      },
-      {
-        route: '/device/api/v1/banner/deletemany',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
         route: '/device/api/v1/cart/create',
         role: 'System_User',
         method: 'POST'
@@ -2900,76 +2760,6 @@ async function seedRouteRole () {
         method: 'POST'
       },
       {
-        route: '/client/api/v1/banner/create',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/client/api/v1/banner/addbulk',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/client/api/v1/banner/list',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/client/api/v1/banner/:id',
-        role: 'System_User',
-        method: 'GET'
-      },
-      {
-        route: '/client/api/v1/banner/:id',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/client/api/v1/banner/count',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/client/api/v1/banner/aggregate',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
-        route: '/client/api/v1/banner/update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/client/api/v1/banner/partial-update/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/client/api/v1/banner/updatebulk',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/client/api/v1/banner/softdelete/:id',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/client/api/v1/banner/softdeletemany',
-        role: 'System_User',
-        method: 'PUT'
-      },
-      {
-        route: '/client/api/v1/banner/delete/:id',
-        role: 'System_User',
-        method: 'DELETE'
-      },
-      {
-        route: '/client/api/v1/banner/deletemany',
-        role: 'System_User',
-        method: 'POST'
-      },
-      {
         route: '/client/api/v1/cart/create',
         role: 'System_User',
         method: 'POST'
@@ -3918,12 +3708,12 @@ async function seedRouteRole () {
 async function seedUserRole (){
   try {
     let user = await User.findOne({
-      'username':'Pat.Howe17',
+      'username':'Art38',
       'isActive':true,
       'isDeleted':false
     });
     let userRole = await Role.findOne({ code: 'SYSTEM_USER' }, { id: 1 });
-    if (user && user.isPasswordMatch('g3oTa_WvxNcQ5CA') && userRole){
+    if (user && user.isPasswordMatch('KrKrtoGBnpPAa3t') && userRole){
       let count = await UserRole.countDocuments({
         userId: user.id,
         roleId: userRole.id
@@ -3937,12 +3727,12 @@ async function seedUserRole (){
       }   
     }
     let admin = await User.findOne({
-      'username':'Genesis.Skiles',
+      'username':'Dalton.Hessel',
       'isActive':true,
       'isDeleted':false
     });
     let adminRole = await Role.findOne({ code: 'SYSTEM_USER' }, { id: 1 });
-    if (admin && admin.isPasswordMatch('CGmcBzB3JW9IyB3') && adminRole){
+    if (admin && admin.isPasswordMatch('ERA_i3xhOSelCft') && adminRole){
       let count = await UserRole.countDocuments({
         userId: admin.id,
         roleId: adminRole.id
