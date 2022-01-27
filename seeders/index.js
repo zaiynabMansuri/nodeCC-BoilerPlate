@@ -15,27 +15,27 @@ const { replaceAll } = require('../utils/common');
 async function seedUser () {
   try {
     let user = await User.findOne({
-      'username':'Stephan_Cormier65',
+      'username':'Caden12',
       'isActive':true,
       'isDeleted':false
     });
-    if (!user || !user.isPasswordMatch('RixyoMeaUT3I55m') ) {
+    if (!user || !user.isPasswordMatch('gOnA4LbO6L95Zsn') ) {
       let user = new User({
-        'password':'RixyoMeaUT3I55m',
-        'username':'Stephan_Cormier65',
+        'password':'gOnA4LbO6L95Zsn',
+        'username':'Caden12',
         'role':authConstant.USER_ROLE.User
       });
       await User.create(user);
     }
     let admin = await User.findOne({
-      'username':'Orville_Williamson35',
+      'username':'Abigayle_Strosin48',
       'isActive':true,
       'isDeleted':false
     });
-    if (!admin || !admin.isPasswordMatch('hYsw5tETcep23Nt') ) {
+    if (!admin || !admin.isPasswordMatch('M4MyheyiH4odsEZ') ) {
       let admin = new User({
-        'password':'hYsw5tETcep23Nt',
-        'username':'Orville_Williamson35',
+        'password':'M4MyheyiH4odsEZ',
+        'username':'Abigayle_Strosin48',
         'role':authConstant.USER_ROLE.Admin
       });
       await User.create(admin);
@@ -3918,12 +3918,12 @@ async function seedRouteRole () {
 async function seedUserRole (){
   try {
     let user = await User.findOne({
-      'username':'Stephan_Cormier65',
+      'username':'Caden12',
       'isActive':true,
       'isDeleted':false
     });
     let userRole = await Role.findOne({ code: 'SYSTEM_USER' }, { id: 1 });
-    if (user && user.isPasswordMatch('RixyoMeaUT3I55m') && userRole){
+    if (user && user.isPasswordMatch('gOnA4LbO6L95Zsn') && userRole){
       let count = await UserRole.countDocuments({
         userId: user.id,
         roleId: userRole.id
@@ -3937,12 +3937,12 @@ async function seedUserRole (){
       }   
     }
     let admin = await User.findOne({
-      'username':'Orville_Williamson35',
+      'username':'Abigayle_Strosin48',
       'isActive':true,
       'isDeleted':false
     });
     let adminRole = await Role.findOne({ code: 'SYSTEM_USER' }, { id: 1 });
-    if (admin && admin.isPasswordMatch('hYsw5tETcep23Nt') && adminRole){
+    if (admin && admin.isPasswordMatch('M4MyheyiH4odsEZ') && adminRole){
       let count = await UserRole.countDocuments({
         userId: admin.id,
         roleId: adminRole.id
